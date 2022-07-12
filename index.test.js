@@ -8,7 +8,7 @@ describe("reverseWords", () => {
 
 describe("title case words", () => {
   it("should capitalize the first letter of each word only", () => {
-    expect(titleCase("alchemy rocks gold")).toBe("Alchemy Rocks Gold");
+    expect(titleCase("alchemy ROCKS goLD")).toBe("Alchemy Rocks Gold");
   });
 });
 
