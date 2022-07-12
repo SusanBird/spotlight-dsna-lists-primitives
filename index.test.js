@@ -25,3 +25,14 @@ describe("at", () => {
     expect(at(['a', 'b', 'c', 'd', 'e'], -2)).toBe('d');
   });
 });
+
+describe("fizz-buzz", () => {
+  it("should take an integer and do fizz buzzy things with it", () => {
+    expect(fizzBuzz(16)).toBe([
+      1, 2, 'Fizz', 4, 'Buzz', 
+      'Fizz', 7, 8, 'Fizz', 'Buzz', 
+      11, 'Fizz', 13, 14, 'FizzBuzz', 
+      16
+    ])
+  });
+});
