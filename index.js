@@ -38,16 +38,19 @@ function oddishOrEvenish(number) {
     //convert the number to a string
     //split the digits apart
     const digits = number.toString().split('');
-    console.log(digits);
+    // console.log(digits);
+    const sum = 0;
 
     //add the sum of the digits
-    for (i = 0; i < number.length; i++) {
-        sum(number[i]);
+    for (let i = 0; i < number.length; i++) {
+        sum = sum(i);
     }
-    // const sum = 
+console.log(sum);
     //use modulus to determine whether 0 or 1
     //if 0, even, if 1, odd 
     //return evenish or oddish
+
+    return sum === 0 ? 'Evenish' : 'Oddish';
 }
 
 module.exports = { reverseWords, titleCase, oddishOrEvenish };
