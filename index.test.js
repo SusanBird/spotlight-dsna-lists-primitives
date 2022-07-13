@@ -1,4 +1,4 @@
-const { reverseWords, titleCase, oddishOrEvenish } = require(".");
+const { reverseWords, titleCase, oddishOrEvenish, fizzBuzz } = require(".");
 
 describe("reverseWords", () => {
   it("should reverse the words of a sentence", () => {
@@ -12,19 +12,19 @@ describe("title case words", () => {
   });
 });
 
-describe("oddishOrEvenish", () => {
-  it("should determine whether the sum of a numbers digits is odd or even", () => {
-    expect(oddishOrEvenish(121)).toBe('Evenish');
-    expect(oddishOrEvenish(41)).toBe('Oddish');
-  });
-});
+// describe("oddishOrEvenish", () => {
+//   it("should determine whether the sum of a numbers digits is odd or even", () => {
+//     expect(oddishOrEvenish(121)).toBe('Evenish');
+//     expect(oddishOrEvenish(41)).toBe('Oddish');
+//   });
+// });
 
-describe("at", () => {
-  it("should take an array and an index and return the item at corresponding index", () => {
-    expect(at(['a', 'b', 'c', 'd', 'e'], 1)).toBe('b');
-    expect(at(['a', 'b', 'c', 'd', 'e'], -2)).toBe('d');
-  });
-});
+// describe("at", () => {
+//   it("should take an array and an index and return the item at corresponding index", () => {
+//     expect(at(['a', 'b', 'c', 'd', 'e'], 1)).toBe('b');
+//     expect(at(['a', 'b', 'c', 'd', 'e'], -2)).toBe('d');
+//   });
+// });
 
 describe("fizz-buzz", () => {
   it("should take an integer and do fizz buzzy things with it", () => {

@@ -53,4 +53,25 @@ console.log(sum);
     return sum === 0 ? 'Evenish' : 'Oddish';
 }
 
-module.exports = { reverseWords, titleCase, oddishOrEvenish };
+function fizzBuzz(number) {
+    //create an empty array
+    const array = [];
+    //count from 1 to n and add each number to the array
+    //
+    for (let i = 1; i <= number; i++) {
+        if(i % 3 === 0 && i % 5 === 0) {
+            array.push('FizzBuzz');
+        } else if(i % 3 === 0) {
+            array.push('Fizz');
+        } else if(i % 5 === 0) {
+            array.push('Buzz');
+        } else {
+            array.push(i);
+        }
+    }
+    console.log(array);
+    
+    return array;
+}
+
+module.exports = { reverseWords, titleCase, oddishOrEvenish, fizzBuzz };
